@@ -1,0 +1,19 @@
+.footer {
+    background-color: #2C3E50; /* Color de fondo azul oscuro */
+    color: #FFFFFF; /* Color del texto blanco */
+    text-align: center; /* Centrar el texto */
+    padding: 20px; /* Espaciado interno */
+    position: relative; /* Posicionamiento relativo */
+    bottom: 0; /* Fijar en la parte inferior */
+    width: 100%; /* Ancho completo */
+  }
+  
+  .footer a {
+    color: #E67E22; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+  }
+  
+  .footer a:hover {
+    color: #F1C40F; /* Color de los enlaces al pasar el ratón */
+  }
+  

@@ -1,0 +1,71 @@
+html {
+  scroll-behavior: smooth; /* Habilita el desplazamiento suave */
+}
+
+body {
+  background-color: #2B2B2B; /* Color de fondo gris oscuro */
+  margin: 0;
+  font-family: Arial, sans-serif; /* Establece la fuente */
+  color: #FFFFFF; /* Color del texto blanco */
+  text-align: center; /* Centrar el texto horizontalmente */
+  line-height: 1.6; /* Mejora la legibilidad */
+  padding-left: 60px; /* Padding en el lado izquierdo */
+  padding-right: 60px; /* Padding en el lado derecho */
+}
+
+header {
+  padding: 20px; /* Espaciado interno */
+  background-color: #3A3A3A; /* Fondo gris más claro */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+  margin: 20px 0; /* Espaciado alrededor del título */
+  font-size: 2.5rem; /* Tamaño del texto */
+}
+
+section {
+  margin: 40px 0; /* Espaciado vertical entre secciones */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  background: #3A3A3A; /* Fondo gris más claro */
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para profundidad */
+}
+
+p {
+  margin: 10px 0; /* Espaciado entre párrafos */
+  font-size: 1.2rem; /* Tamaño del texto */
+}
+
+button {
+  background-color: #4D4D4D; /* Color del botón gris oscuro */
+  color: #FFFFFF; /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s; /* Efecto de transición */
+}
+
+button:hover {
+  background-color: #E0E0E0; /* Color al pasar el mouse (gris claro) */
+}
+
+ul {
+  list-style-type: none; /* Quitar viñetas de la lista */
+  padding: 0; /* Quitar padding */
+}
+
+li {
+  font-size: 1.2rem; /* Tamaño del texto */
+  margin: 10px 0; /* Espaciado entre ítems de la lista */
+}
+
+.footer {
+  background-color: #2B2B2B; /* Color de fondo gris oscuro */
+  color: #FFFFFF; /* Color del texto blanco */
+  padding: 20px; /* Espaciado interno */
+  text-align: center; /* Centra el texto */
+}

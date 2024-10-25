@@ -1,0 +1,39 @@
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Se adapta en 3 columnas o menos según el ancho */
+  gap: 20px; /* Espacio entre columnas y filas */
+  justify-items: center; /* Centra cada proyecto horizontalmente */
+  width: 100%;
+  
+}
+
+.project {
+  border: 2px solid #5f03aa; /* Borde de color personalizado */
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #f9f9f9; /* Fondo claro */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-5px); /* Animación al pasar el cursor */
+}
+
+.project h3 {
+  color: #5f03aa;
+  font-size: 1.2rem;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #5f03aa;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}

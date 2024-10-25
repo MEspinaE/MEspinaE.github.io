@@ -1,0 +1,41 @@
+.technologies-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 20px; /* Espaciado entre íconos */
+    justify-items: center; /* Centrar íconos horizontalmente */
+    align-items: center; /* Centrar íconos verticalmente */
+    
+    margin-top: 20px; /* Margen superior para separar de otros elementos */
+    
+  }
+  
+  .technology-item {
+    font-size: 3.8rem; /* Tamaño de los íconos */
+    color: #FFFFFF; /* Color blanco para los íconos */
+    transition: transform 0.3s ease; /* Animación suave al pasar el ratón */
+    background-color: #185a9c; /* Fondo naranja para simular un bloque */
+    padding: 30px; /* Espaciado interno del bloque */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para resaltar los bloques */
+    display: flex; /* Utiliza flexbox para centrar el contenido */
+    justify-content: center; /* Centrar horizontalmente el ícono */
+    align-items: center; /* Centrar verticalmente el ícono */
+  }
+  
+  .technology-item:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón */
+  }
+  
+  h2 {
+    margin-bottom: 70px; /* Margen inferior para separación */
+    font-size: 2.3rem; /* Tamaño del encabezado */
+    text-decoration: underline;
+    text-shadow: 
+      1px 1px 0 black,
+      -1px -1px 0 black,
+      1px -1px 0 black,
+      -1px 1px 0 black; /* Sombra para el texto */
+    text-align: center; /* Centrar el título */
+    color: #FFFFFF; /* Color blanco para el texto */
+  }
+  

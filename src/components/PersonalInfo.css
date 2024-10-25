@@ -1,0 +1,40 @@
+.personal-info-section {
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo blanco con opacidad */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  margin: 20px auto; /* Margen superior e inferior, centrado horizontalmente */
+  color: #FFFFFF; /* Color del texto */
+  max-width: Fill; /* Ancho máximo del contenedor */
+  text-align: center; /* Centrar texto dentro del contenedor */
+  font-size: 1.2rem; /* Tamaño de fuente para todos los textos en la sección */
+}
+
+.personal-info-title {
+  text-decoration: underline; /* Subraya el título */
+  font-weight: bold; /* Aplica negritas al título */
+  margin-bottom: 20px; /* Margen inferior para separación */
+  color: #ffffff; /* Color del título en azul oscuro */
+  
+}
+
+.personal-info-item {
+  display: flex; /* Usar flexbox para alinear elementos */
+  align-items: center; /* Centrar verticalmente */
+  justify-content: center; /* Centrar horizontalmente */
+  margin: 10px 0; /* Margen superior e inferior de los ítems */
+  font-size: 1rem; /* Tamaño de fuente específico para los ítems */
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+}
+
+.circle {
+  width: 10px; /* Ancho del círculo */
+  height: 10px; /* Alto del círculo */
+  background-color: #FFFFFF; /* Color del círculo */
+  border-radius: 50%; /* Hace que sea un círculo */
+  margin-right: 10px; /* Espacio entre el círculo y el texto */
+}
+
+.personal-info-item p {
+  font-size: 1.7rem; /* Ajusta este valor según sea necesario */
+  color: #ffffff; /* Color del texto en azul oscuro para mejor contraste */
+}
