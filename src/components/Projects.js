@@ -3,25 +3,24 @@ import './Projects.css';
 
 const Projects = () => {
   const projectList = [
-
     {
-      title: 'Proyecto 4',
-      description: 'Descripción del proyecto 1',
-      link: 'https://github.com/tuusuario/proyecto1',
+      title: 'Portafolio Web',
+      description: 'Portafolio generado en base a React y Tailwind CSS.',
+      link: 'https://github.com/MEspinaE/mi-portafolio-React',
     },
     {
-      title: 'Aplicacion de consulta de clima',
-      description: 'App generada con API para verificar el estado del clima y el pronostico del mismo en diferentes ciudades.',
+      title: 'Aplicación de consulta de clima',
+      description: 'App generada con API para verificar el estado del clima y el pronóstico en diferentes ciudades.',
       link: 'https://github.com/MEspinaE/Clima',
     },
     {
       title: 'Reloj digital',
-      description: 'Reloj digital sencillo generado con código Python',
+      description: 'Reloj digital sencillo generado con código Python.',
       link: 'https://github.com/MEspinaE/reloj-digital',
     },
     {
       title: 'Generador de contraseñas aleatorias',
-      description: 'Generador de contraseñas generado en Python',
+      description: 'Generador de contraseñas en Python.',
       link: 'https://github.com/MEspinaE/generador-contrase-as',
     },
     {
@@ -31,9 +30,14 @@ const Projects = () => {
     },
     {
       title: 'Web Login',
-      description: 'Sistema de inicio de sesion generado con Flask, HTML y CSS',
+      description: 'Sistema de inicio de sesión generado con Flask, HTML y CSS.',
       link: 'https://github.com/MEspinaE/web-login',
-    }
+    },
+    {
+      title: 'Portafolio Web Tecnología Reflex',
+      description: 'Portafolio generado en Reflex usando Python.',
+      link: 'https://github.com/MEspinaE/Portafolio-master',
+    },
   ];
 
   return (

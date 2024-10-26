@@ -4,7 +4,7 @@
   border-radius: 5px; /* Bordes redondeados */
   margin: 20px auto; /* Margen superior e inferior, centrado horizontalmente */
   color: #FFFFFF; /* Color del texto */
-  max-width: Fill; /* Ancho máximo del contenedor */
+  max-width: 100%; /* Asegúrate de que el ancho máximo sea 100% */
   text-align: center; /* Centrar texto dentro del contenedor */
   font-size: 1.2rem; /* Tamaño de fuente para todos los textos en la sección */
 }
@@ -14,7 +14,6 @@
   font-weight: bold; /* Aplica negritas al título */
   margin-bottom: 20px; /* Margen inferior para separación */
   color: #ffffff; /* Color del título en azul oscuro */
-  
 }
 
 .personal-info-item {
@@ -24,12 +23,13 @@
   margin: 10px 0; /* Margen superior e inferior de los ítems */
   font-size: 1rem; /* Tamaño de fuente específico para los ítems */
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+  overflow-wrap: break-word; /* Permitir saltos de línea en palabras largas */
 }
 
 .circle {
   width: 10px; /* Ancho del círculo */
   height: 10px; /* Alto del círculo */
-  background-color: #FFFFFF; /* Color del círculo */
+  background-color: #ff8000; /* Color del círculo */
   border-radius: 50%; /* Hace que sea un círculo */
   margin-right: 10px; /* Espacio entre el círculo y el texto */
 }
@@ -37,4 +37,40 @@
 .personal-info-item p {
   font-size: 1.7rem; /* Ajusta este valor según sea necesario */
   color: #ffffff; /* Color del texto en azul oscuro para mejor contraste */
+  overflow-wrap: break-word; /* Permitir saltos de línea en palabras largas */
+}
+
+/* Estilos responsivos para pantallas móviles */
+@media (max-width: 320px),
+       (max-width: 375px),
+       (max-width: 414px),
+       (max-width: 412px),
+       (max-width: 390px),
+       (max-width: 430px),
+       (max-width: 768px),
+       (max-width: 540px),
+       (max-width: 344px) {
+  
+  .personal-info-section {
+    padding: 0; /* Eliminar padding en pantallas pequeñas */
+    margin: 0; /* Eliminar márgenes en pantallas pequeñas */
+  }
+
+  .personal-info-title {
+    margin-bottom: 0; /* Eliminar margen inferior en pantallas pequeñas */
+  }
+
+  .personal-info-item {
+    margin: 0; /* Eliminar márgenes en ítems */
+    font-size: 1rem; /* Ajustar el tamaño de fuente si es necesario */
+  }
+
+  .personal-info-item p {
+    font-size: 1.2rem; /* Ajustar el tamaño de fuente si es necesario */
+    overflow-wrap: break-word; /* Permitir saltos de línea en palabras largas */
+  }
+
+  .circle {
+    display: none; /* Ocultar círculos en pantallas pequeñas */
+  }
 }

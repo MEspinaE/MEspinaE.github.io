@@ -1,19 +1,21 @@
 .contact-buttons {
   display: flex;
-  justify-content: center; /* Centra los botones horizontalmente */
-  margin: 20px 0; /* Espaciado alrededor de los botones */
+  justify-content: center; 
+  flex-wrap: wrap; 
+  margin: 20px 0; 
 }
 
 .contact-button {
-  background-color: transparent; /* Sin fondo */
-  color: white; /* Color del ícono */
-  padding: 25px; /* Espaciado interno */
-  border: none; /* Sin borde */
-  border-radius: 20%; /* Bordes redondeados para un efecto de círculo */
-  margin: 0 10px; /* Espaciado horizontal entre botones */
-  transition: background-color 0.3s; /* Transición suave al cambiar el color */
+  background-color: transparent; 
+  color: white; 
+  padding: 1.5rem; 
+  border: none; 
+  border-radius: 50%; 
+  margin: 0.5rem; 
+  transition: background-color 0.3s; 
+  flex: 0 1 75px; 
 }
 
 .contact-button:hover {
-  background-color: #185a9c; /* Color de fondo al pasar el mouse */
+  background-color: #185a9c; 
 }

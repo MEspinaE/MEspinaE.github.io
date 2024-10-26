@@ -14,8 +14,6 @@ const App = () => {
         <Header />
       </header>
       <main>
-        <h1>Mi Portafolio</h1>
-
         <section id="Presentation">
           <Presentation /> {/* Sección de presentación */}
         </section>

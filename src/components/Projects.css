@@ -1,39 +1,144 @@
 .project-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Se adapta en 3 columnas o menos según el ancho */
-  gap: 20px; /* Espacio entre columnas y filas */
-  justify-items: center; /* Centra cada proyecto horizontalmente */
-  width: 100%;
-  
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas grandes */
+  gap: 20px; /* Espacio entre los elementos */
+  justify-items: center; /* Centra los elementos en la cuadrícula */
 }
 
 .project {
-  border: 2px solid #5f03aa; /* Borde de color personalizado */
-  border-radius: 8px;
-  padding: 15px;
-  background-color: #f9f9f9; /* Fondo claro */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-  text-align: center;
-  transition: transform 0.3s;
+  border: 1px solid #4d4d4d; /* Borde del proyecto */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  margin: 20px; /* Margen externo */
+  width: 100%; /* Ancho completo del proyecto */
+  max-width: 400px; /* Ancho máximo del proyecto */
+  text-align: center; /* Centra el texto */
+  background-color: #2b2b2b; /* Color de fondo del proyecto */
+  color: #f0f0f0; /* Color del texto */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transición para efectos hover */
 }
 
 .project:hover {
-  transform: translateY(-5px); /* Animación al pasar el cursor */
+  transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7); /* Sombra más intensa en hover */
 }
 
 .project h3 {
-  color: #5f03aa;
-  font-size: 1.2rem;
+  font-size: 2.1rem; /* Tamaño de fuente para el título del proyecto */
+  margin-bottom: 10px; /* Margen inferior para separación */
+  color: #ffffff; /* Color del título */
+}
+
+.project p {
+  font-size: 1.4rem; /* Tamaño de fuente para la descripción del proyecto */
+  color: #dcdcdc; /* Color del texto */
+  padding: 0; /* Sin padding adicional */
 }
 
 .project a {
-  display: inline-block;
-  margin-top: 10px;
-  color: #5f03aa;
-  text-decoration: none;
-  font-weight: bold;
+  display: inline-block; /* Mostrar como bloque en línea */
+  margin-top: 10px; /* Margen superior para separación */
+  padding: 10px 20px; /* Padding interno para el enlace */
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: #444; /* Color de fondo del enlace */
+  color: #fff; /* Color del texto del enlace */
+  text-decoration: none; /* Sin subrayado */
+  transition: background-color 0.3s ease-in-out; /* Transición para el color de fondo */
 }
 
 .project a:hover {
-  text-decoration: underline;
+  background-color: #888; /* Color de fondo del enlace al pasar el mouse */
+}
+
+/* Estilos responsivos para varios tamaños de pantalla */
+@media (max-width: 768px) {
+  .project-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
+    margin: 0; /* Eliminar margen en pantallas medianas */
+  }
+
+  .project {
+    margin: 0; /* Eliminar margen en proyectos para pantallas medianas */
+    padding: 15px; /* Ajustar padding para pantallas medianas */
+  }
+}
+
+@media (max-width: 540px) {
+  .project-list {
+    grid-template-columns: 1fr; /* 1 columna en pantallas más pequeñas */
+    margin: 0; /* Eliminar margen en pantallas más pequeñas */
+  }
+
+  .project {
+    margin: 0; /* Eliminar margen en proyectos para pantallas más pequeñas */
+    padding: 10px; /* Ajustar padding para pantallas más pequeñas */
+  }
+}
+
+/* Reducir tamaño en pantallas específicas */
+@media (max-width: 912px) {
+  .project {
+    transform: scale(0.9); /* Hacer los proyectos un 10% más pequeños */
+  }
+}
+
+@media (max-width: 853px) {
+  .project {
+    transform: scale(0.9); /* Hacer los proyectos un 10% más pequeños */
+  }
+}
+
+@media (max-width: 820px) {
+  .project {
+    transform: scale(0.9); /* Hacer los proyectos un 10% más pequeños */
+  }
+}
+
+@media (max-width: 430px) {
+  .project {
+    max-width: 90%; /* Asegura que los proyectos ocupen el 100% del ancho disponible */
+  }
+}
+
+@media (max-width: 414px) {
+  .project {
+    max-width: 90%; /* Asegura que los proyectos ocupen el 100% del ancho disponible */
+  }
+}
+
+@media (max-width: 412px) {
+  .project {
+    max-width: 90%; /* Asegura que los proyectos ocupen el 100% del ancho disponible */
+  }
+}
+
+@media (max-width: 390px) {
+  .project {
+    max-width: 90%; /* Asegura que los proyectos ocupen el 100% del ancho disponible */
+  }
+}
+
+@media (max-width: 375px) {
+  .project {
+    max-width: 90%; /* Asegura que los proyectos ocupen el 100% del ancho disponible */
+  }
+}
+
+@media (max-width: 360px) {
+  .project {
+    max-width: 90%; /* Asegura que los proyectos ocupen el 100% del ancho disponible */
+  }
+}
+
+@media (max-width: 344px) {
+  .project {
+    max-width: 90%; /* Asegura que los proyectos ocupen el 100% del ancho disponible */
+  }
+}
+
+@media (max-width: 320px) {
+  .project {
+    max-width: 90%; /* Asegura que los proyectos ocupen el 100% del ancho disponible */
+  }
 }

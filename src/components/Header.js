@@ -1,7 +1,8 @@
 import React from 'react';
-import './Header.css'; // Estilos opcionales
-import miFoto from '../images/1.png'; // Importa tu imagen
-import DropdownMenu from './DropdownMenu'; // Asegúrate de importar el menú desplegable
+import './Header.css'; 
+import miFoto from '../images/yo.jpg'; 
+import DropdownMenu from './DropdownMenu'; 
+
 
 const Header = () => {
   return (

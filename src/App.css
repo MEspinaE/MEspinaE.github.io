@@ -1,38 +1,98 @@
 .App {
-  text-align: center; /* Centrar el texto horizontalmente */
+  text-align: center; 
 }
 
 .App-logo {
-  height: 40vmin; /* Tamaño del logo */
-  pointer-events: none; /* Deshabilitar interacciones */
+  height: 40vmin; 
+  pointer-events: none; 
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear; /* Animación de rotación */
+    animation: App-logo-spin infinite 20s linear; 
   }
 }
 
 .App-header {
-  background-color: #2C3E50; /* Color de fondo azul oscuro */
-  min-height: 100vh; /* Altura mínima de la vista */
-  display: flex; /* Usar flexbox */
-  flex-direction: column; /* Dirección de la flexbox */
-  align-items: center; /* Alinear elementos al centro */
-  justify-content: center; /* Justificar contenido al centro */
-  font-size: calc(10px + 2vmin); /* Tamaño de fuente responsivo */
-  color: #FFFFFF; /* Color del texto blanco */
+  background-color: #2C3E50; 
+  min-height: 100vh; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  font-size: calc(10px + 2vmin); 
+  color: #FFFFFF; 
 }
 
 .App-link {
-  color: #E67E22; /* Color de los enlaces */
+  color: #E67E22; 
 }
 
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg); /* Comienza en 0 grados */
+    transform: rotate(0deg); 
   }
   to {
-    transform: rotate(360deg); /* Rota 360 grados */
+    transform: rotate(360deg); 
+  }
+}
+
+/* Estilos responsivos para pantallas estrechas (hasta 293px de ancho) */
+@media (max-width: 293px) {
+  .App-header {
+    min-height: 80vh; /* Ajusta la altura mínima para pantallas estrechas */
+    padding: 10px; /* Nuevo padding para pantallas estrechas */
+  }
+
+  .App-logo {
+    height: 30vmin; /* Reduce el tamaño de la imagen */
+  }
+
+  .App-header h1 {
+    font-size: 1.5rem; /* Ajusta el tamaño de la fuente del título */
+  }
+
+  .App-link {
+    font-size: 1rem; /* Ajusta el tamaño del texto del enlace */
+  }
+}
+
+/* Estilos responsivos para pantallas de hasta 1300px de alto */
+@media (max-height: 1300px) {
+  .App-header {
+    min-height: 90vh; /* Ajusta la altura mínima para pantallas con menor altura */
+    padding: 15px; /* Ajusta el padding del encabezado */
+  }
+
+  .App-logo {
+    height: 35vmin; /* Ajusta el tamaño de la imagen */
+  }
+
+  .App-header h1 {
+    font-size: 2rem; /* Ajusta el tamaño de la fuente del título */
+  }
+
+  .App-link {
+    font-size: 1.1rem; /* Ajusta el tamaño del texto del enlace */
+  }
+}
+
+/* Estilos para pantallas grandes (más de 293px de ancho y más de 1300px de alto) */
+@media (min-width: 294px) and (min-height: 1301px) {
+  .App-header {
+    min-height: 100vh; /* Vuelve a la altura mínima original */
+    padding: 20px; /* Mantiene el padding original */
+  }
+
+  .App-logo {
+    height: 40vmin; /* Mantiene el tamaño de la imagen original */
+  }
+
+  .App-header h1 {
+    font-size: calc(10px + 2vmin); /* Mantiene el tamaño de la fuente del título original */
+  }
+
+  .App-link {
+    font-size: 1.2rem; /* Mantiene el tamaño del texto del enlace original */
   }
 }

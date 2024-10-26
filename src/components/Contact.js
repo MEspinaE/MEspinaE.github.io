@@ -13,13 +13,13 @@ const Contact = () => {
           rel="noopener noreferrer"
           className="contact-button"
         >
-          <FaInstagram size={75} /> {/* Aumenta el tamaño del ícono de Instagram */}
+          <FaInstagram size={75} />
         </a>
         <a
           href="mailto:marcoantonio.espina5@gmail.com"
           className="contact-button"
         >
-          <FaEnvelope size={75} /> {/* Aumenta el tamaño del ícono de correo electrónico */}
+          <FaEnvelope size={75} />
         </a>
         <a
           href="https://github.com/MEspinaE"
@@ -27,7 +27,7 @@ const Contact = () => {
           rel="noopener noreferrer"
           className="contact-button"
         >
-          <FaGithub size={75} /> {/* Aumenta el tamaño del ícono de LinkedIn */}
+          <FaGithub size={75} />
         </a>
         <a
           href="https://wa.me/+56921106869"
@@ -35,7 +35,7 @@ const Contact = () => {
           rel="noopener noreferrer"
           className="contact-button"
         >
-          <FaWhatsapp size={75} /> {/* Aumenta el tamaño del ícono de WhatsApp */}
+          <FaWhatsapp size={75} />
         </a>
         <a
           href="https://www.linkedin.com/in/marco-espina-3b7bba316/"
@@ -43,9 +43,8 @@ const Contact = () => {
           rel="noopener noreferrer"
           className="contact-button"
         >
-          <FaLinkedin size={75} /> {/* Aumenta el tamaño del ícono de LinkedIn */}
+          <FaLinkedin size={75} />
         </a>
-        
       </div>
     </section>
   );

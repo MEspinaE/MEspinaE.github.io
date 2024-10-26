@@ -1,25 +1,52 @@
 .presentation-section {
-    background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
-    padding: 30px;
-    border-radius: 8px;
-    margin: 23px auto; /* Margen superior e inferior, centrado horizontalmente */
-    color: #FFFFFF; /* Color del texto */
-    max-width: Fill; /* Ancho máximo del contenedor */
-    text-align: center; /* Centrar texto dentro del contenedor */
-    align-items: center; /* Centrar verticalmente */
-    justify-content: center;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
-  }
-  
-  .presentation-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 50px;
-    
-  }
-  
-  .presentation-section p {
-    font-size: 1.8rem;
-    line-height: 1.6;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); /* Sombra del texto */
-  }
-  
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+  padding: 30px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  margin: 23px auto; /* Margen superior e inferior, centrado horizontalmente */
+  color: #FFFFFF; /* Color del texto */
+  max-width: 100%; /* Ancho máximo del contenedor */
+  text-align: center; /* Centrar texto dentro del contenedor */
+  align-items: center; /* Centrar verticalmente */
+  justify-content: center;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+}
+
+.presentation-section h2 {
+  font-size: 2.5rem; /* Tamaño de fuente para el título */
+  margin-bottom: 50px; /* Margen inferior para separación */
+}
+
+.presentation-section p {
+  font-size: 1.8rem; /* Tamaño de fuente para el texto */
+  line-height: 1.6; /* Altura de línea */
+  padding: 20px 80px 20px; /* Espaciado interno */
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+}
+
+/* Estilos responsivos para pantallas móviles */
+@media (max-width: 320px),
+     (max-width: 375px),
+     (max-width: 414px),
+     (max-width: 412px),
+     (max-width: 390px),
+     (max-width: 430px),
+     (max-width: 768px),
+     (max-width: 540px),
+     (max-width: 344px) {
+
+.presentation-section {
+  padding: 0; /* Eliminar padding en pantallas pequeñas */
+  margin: 0; /* Eliminar márgenes en pantallas pequeñas */
+}
+
+.presentation-section h2 {
+  margin-bottom: 0; /* Eliminar margen inferior en pantallas pequeñas */
+  font-size: 2rem; /* Ajustar el tamaño de fuente si es necesario */
+}
+
+.presentation-section p {
+  font-size: 1.4rem; /* Ajustar el tamaño de fuente si es necesario */
+  padding: 0; /* Eliminar padding en pantallas pequeñas */
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+}
+}

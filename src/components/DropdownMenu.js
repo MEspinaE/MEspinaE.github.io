@@ -1,35 +1,47 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-scroll'; // Asegúrate de instalar react-scroll
-import './DropdownMenu.css'; // Asegúrate de importar los estilos
+import { Link } from 'react-scroll'; 
+
+import './DropdownMenu.css'; 
+
 
 const DropdownMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const dropdownRef = useRef(null); // Referencia al menú desplegable
+  const dropdownRef = useRef(null); 
+
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   const handleClickOutside = (event) => {
-    // Cierra el menú si se hace clic fuera de él
+    
+
     if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
       setIsOpen(false);
     }
   };
 
   useEffect(() => {
-    // Añade el evento de clic al documento
+    
+
     document.addEventListener('mousedown', handleClickOutside);
     
     return () => {
-      // Limpia el evento al desmontar el componente
+      
+
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
 
   return (
     <div className="dropdown" ref={dropdownRef}>
-      <button className="dropdown-toggle" onClick={toggleMenu}>
+      <button 
+        className="dropdown-toggle" 
+        onClick={toggleMenu}
+        aria-haspopup="true" 
+        aria-expanded={isOpen} 
+
+      >
         Menú
       </button>
       <ul className={`dropdown-menu ${isOpen ? 'show' : ''}`}>

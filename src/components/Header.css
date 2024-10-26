@@ -1,29 +1,52 @@
 .header-container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: center; /* Espacia los elementos (izquierda y derecha) */
+  padding: 30px;
   background: rgba(255, 255, 255, 0.1);
-  
-  height: 300px;
-  width: auto;
+  height: auto; /* Permite que la altura sea dinámica */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples líneas */
+  flex-direction: column;
 }
 
 .profile-pic {
-  position: absolute;
-  width: 250px; /* Ajusta el tamaño de la imagen */
-  height: 250px;
+  width: 100%; /* Ajusta el ancho al contenedor */
+  max-width: 300px; /* Tamaño máximo de la imagen */
+  height: auto; /* Mantiene la relación de aspecto */
   border-radius: 50%; /* Hace que la imagen sea circular */
-  left: 44%;
+  margin-bottom: 50px;
+  
+}
+
+.header-title {
+  flex-grow: 1; /* Permite que el título use el espacio disponible */
+  text-align: center; /* Centra el texto dentro del contenedor */
+  max-width: 800px;
 }
 
 .header-title h1 {
-  position: absolute;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+  padding-bottom: 50px;
   color: #FFFFFF; /* Color del texto del título */
-  left: 10%;
-  top: 15%;
-  text-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);;
-  
+  text-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+  margin: 0; /* Elimina el margen para un mejor centrado */
+}
+
+
+
+/* Media Queries para hacer el Header responsivo */
+@media (max-width: 768px) {
+  .profile-pic {
+    max-width: 200px; /* Reduce el tamaño de la imagen en pantallas más pequeñas */
+  }
+
+  .header-title h1 {
+    font-size: 2rem; /* Reduce el tamaño de la fuente en pantallas más pequeñas */
+  }
+
+  .header-container {
+    flex-direction: column; /* Cambia a disposición vertical en pantallas pequeñas */
+    align-items: center; /* Centra el contenido */
+  }
 }

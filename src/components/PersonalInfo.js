@@ -1,5 +1,6 @@
 import React from 'react';
-import './PersonalInfo.css'; // Asegúrate de que la ruta sea correcta
+import './PersonalInfo.css'; 
+
 
 const PersonalInfo = () => {
   return (
@@ -19,20 +20,8 @@ const PersonalInfo = () => {
       </div>
       <div className="personal-info-item">
         <div className="circle"></div>
-        <p><strong>Email:</strong> marcoantonio.espina5@gmail.com</p>
-      </div>
-      <div className="personal-info-item">
-        <div className="circle"></div>
         <p><strong>Teléfono:</strong> +56921106869</p>
       </div>
-      <div className="personal-info-item">
-        <div className="circle"></div>
-        <p><strong>Descripción:</strong> Desarrollador web con experiencia en React y Tailwind CSS,</p>
-      </div>
-      <div className="personal-info-item">
-        <p>Apasionado por el aprendizaje de nuevas tecnologías.</p>
-      </div>
-      
     </section>
   );
 };
